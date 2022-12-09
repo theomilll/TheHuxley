@@ -27,6 +27,9 @@ int wellDefinedString(char *A){
             count3 = count3 - 1;
         }
     }
+    if(A[0] == '}' && A[1] == '{'){
+        return 0;
+    }
     if(count1 == 0 && count2 == 0 && count3 == 0){
         return 1;
     }
